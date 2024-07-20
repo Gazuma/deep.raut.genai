@@ -1,0 +1,22 @@
+1. The article starts by the introduction of Recurrent Neural Networks and techniques utilized to improve the performance of the language models for situations where hardware can become a limiting factors. Primary techniques mentioned were parallelization, factorization and conditional computing. The author further proposes that rather than relying on the concept of Recurrent Models, we can use the Transformer model which offers better parallelization and lower training times.
+
+2. The author further ellaborates that with increasing distance between two points the ability of the model to relate them also takes higher number of operations which is computationally expensive. To solve this problem the Transformer reduces the number of operations to a constant number. This was achieved by using techniques like self-attention and end-to-end memory networks, making the Transformer a one of its kind model relying on self-attention for the representations of both input and output. I observed that there is an attempt to avoid the use of traditional sequential model and use an attention based approach to reduce the operations here.
+
+3. While describing the architecture, the author enlists five components, namely:
+
+    Encoder and Decoder Stacks - These layers handle the internal representation of the data.
+
+    Attention Function - The function contains a query mechanism and some key value pairs. The output of the query is computed using the weighted some of each value.
+
+    Feed-Forward Networks - It is not a separate component, rather a subpart of the encoder and decoder that applies linear transformations.
+
+    Embeddings and Softmax - It is used to predict next posssible tokens using the linear transformations learned earlier.
+
+    Positional Encoding - These functions are used to define the relative positions of the tokens as there is no inherent method to define it as the traditional recurrence or convolution technique has not being used.
+
+4. The author further expresses the need of the "Self Attention" technique by comparing this approach to the traditional approaches in three criterias, namely:
+    - Total computational complexity per layer
+    - Amount of computation that can be parallelized
+    - Path length between long-range dependencies.
+
+5. Concluding the article the author expresses that the Transformer was used to make the generation of realtime data less sequential and more of an attention based approach to make it computationally efficient.
